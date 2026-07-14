@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://ums.asu.edu.eg/StudentGrades -->
+<html lang="ar" dir="rtl" style=""
+    class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths k-webkit k-webkit150 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js  js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        .swal-icon--error {
+            border-color: #f27474;
+            -webkit-animation: animateErrorIcon .5s;
+            animation: animateErrorIcon .5s
+        }
+
+        .swal-icon--error__x-mark {
+            position: relative;
+            display: block;
+            -webkit-animation: animateXMark .5s;
+            animation: animateXMark .5s
+        }
+
+        .swal-icon--error__line {
+            position: absolute;
+            height: 5px;
+            width: 47px;
+            background-color: #f27474;
+            display: block;
+            top: 37px;
+            border-radius: 2px
+        }
+
+        .swal-icon--error__line--left {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: 17px
+        }
+
+        .swal-icon--error__line--right {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            right: 16px
+        }
+
+        @-webkit-keyframes animateErrorIcon {
+            0% {
+                -webkit-transform: rotateX(100deg);
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+
+        @keyframes animateErrorIcon {
+            0% {
+                -webkit-transform: rotateX(100deg);
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes animateXMark {
+            0% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            50% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            80% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+                margin-top: -6px
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                margin-top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animateXMark {
+            0% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            50% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            80% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+                margin-top: -6px
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                margin-top: 0;
+                opacity: 1
+            }
+        }
+
+        .swal-icon--warning {
+            border-color: #f8bb86;
+            -webkit-animation: pulseWarning .75s infinite alternate;
+            animation: pulseWarning .75s infinite alternate
+        }
+
+        .swal-icon--warning__body {
+            width: 5px;
+            height: 47px;
+            top: 10px;
+            border-radius: 2px;
+            margin-left: -2px
+        }
+
+        .swal-icon--warning__body,
+        .swal-icon--warning__dot {
+            position: absolute;
+            left: 50%;
+            background-color: #f8bb86
+        }
+
+        .swal-icon--warning__dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-left: -4px;
+            bottom: -11px
+        }
+
+        @-webkit-keyframes pulseWarning {
+            0% {
+                border-color: #f8d486
+            }
+
+            to {
+                border-color: #f8bb86
+            }
+        }
+
+        @keyframes pulseWarning {
+            0% {
+                border-color: #f8d486
+            }
+
+            to {
+                border-color: #f8bb86
+            }
+        }
+
+        .swal-icon--success {
+            border-color: #a5dc86
+        }
+
+        .swal-icon--success:after,
+        .swal-icon--success:before {
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: #fff;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .swal-icon--success:before {
+            border-radius: 120px 0 0 120px;
+            top: -7px;
+            left: -33px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 60px 60px;
+            transform-origin: 60px 60px
+        }
+
+        .swal-icon--success:after {
+            border-radius: 0 120px 120px 0;
+            top: -11px;
+            left: 30px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 60px;
+            transform-origin: 0 60px;
+            -webkit-animation: rotatePlaceholder 4.25s ease-in;
+            animation: rotatePlaceholder 4.25s ease-in
+        }
+
+        .swal-icon--success__ring {
+            width: 80px;
+            height: 80px;
+            border: 4px solid hsla(98, 55%, 69%, .2);
+            border-radius: 50%;
+            box-sizing: content-box;
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            z-index: 2
+        }
+
+        .swal-icon--success__hide-corners {
+            width: 5px;
+            height: 90px;
+            background-color: #fff;
+            padding: 1px;
+            position: absolute;
+            left: 28px;
+            top: 8px;
+            z-index: 1;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        .swal-icon--success__line {
+            height: 5px;
+            background-color: #a5dc86;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 2
+        }
+
+        .swal-icon--success__line--tip {
+            width: 25px;
+            left: 14px;
+            top: 46px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: animateSuccessTip .75s;
+            animation: animateSuccessTip .75s
+        }
+
+        .swal-icon--success__line--long {
+            width: 47px;
+            right: 8px;
+            top: 38px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-animation: animateSuccessLong .75s;
+            animation: animateSuccessLong .75s
+        }
+
+        @-webkit-keyframes rotatePlaceholder {
+            0% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+        }
+
+        @keyframes rotatePlaceholder {
+            0% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+        }
+
+        @-webkit-keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px
+            }
+
+            to {
+                width: 25px;
+                left: 14px;
+                top: 45px
+            }
+        }
+
+        @keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px
+            }
+
+            to {
+                width: 25px;
+                left: 14px;
+                top: 45px
+            }
+        }
+
+        @-webkit-keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            84% {
+                width: 55px;
+                right: 0;
+                top: 35px
+            }
+
+            to {
+                width: 47px;
+                right: 8px;
+                top: 38px
+            }
+        }
+
+        @keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            84% {
+                width: 55px;
+                right: 0;
+                top: 35px
+            }
+
+            to {
+                width: 47px;
+                right: 8px;
+                top: 38px
+            }
+        }
+
+        .swal-icon--info {
+            border-color: #c9dae1
+        }
+
+        .swal-icon--info:before {
+            width: 5px;
+            height: 29px;
+            bottom: 17px;
+            border-radius: 2px;
+            margin-left: -2px
+        }
+
+        .swal-icon--info:after,
+        .swal-icon--info:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background-color: #c9dae1
+        }
+
+        .swal-icon--info:after {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-left: -3px;
+            top: 19px
+        }
+
+        .swal-icon {
+            width: 80px;
+            height: 80px;
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 50%;
+            padding: 0;
+            position: relative;
+            box-sizing: content-box;
+            margin: 20px auto
+        }
+
+        .swal-icon:first-child {
+            margin-top: 32px
+        }
+
+        .swal-icon--custom {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0
+        }
+
+        .swal-icon img {
+            max-width: 100%;
+            max-height: 100%
+        }
+
+        .swal-title {
+            color: rgba(0, 0, 0, .65);
+            font-weight: 600;
+            text-transform: none;
+            position: relative;
+            display: block;
+            padding: 13px 16px;
+            font-size: 27px;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 0
+        }
+
+        .swal-title:first-child {
+            margin-top: 26px
+        }
+
+        .swal-title:not(:first-child) {
+            padding-bottom: 0
+        }
+
+        .swal-title:not(:last-child) {
+            margin-bottom: 13px
+        }
+
+        .swal-text {
+            font-size: 16px;
+            position: relative;
+            float: none;
+            line-height: normal;
+            vertical-align: top;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+            padding: 0 10px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .64);
+            max-width: calc(100% - 20px);
+            overflow-wrap: break-word;
+            box-sizing: border-box
+        }
+
+        .swal-text:first-child {
+            margin-top: 45px
+        }
+
+        .swal-text:last-child {
+            margin-bottom: 45px
+        }
+
+        .swal-footer {
+            text-align: right;
+            padding-top: 13px;
+            margin-top: 13px;
+            padding: 13px 16px;
+            border-radius: inherit;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .swal-button-container {
+            margin: 5px;
+            display: inline-block;
+            position: relative
+        }
+
+        .swal-button {
+            background-color: #7cd1f9;
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 24px;
+            margin: 0;
+            cursor: pointer
+        }
+
+        .swal-button:not([disabled]):hover {
+            background-color: #78cbf2
+        }
+
+        .swal-button:active {
+            background-color: #70bce0
+        }
+
+        .swal-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+        }
+
+        .swal-button[disabled] {
+            opacity: .5;
+            cursor: default
+        }
+
+        .swal-button::-moz-focus-inner {
+            border: 0
+        }
+
+        .swal-button--cancel {
+            color: #555;
+            background-color: #efefef
+        }
+
+        .swal-button--cancel:not([disabled]):hover {
+            background-color: #e8e8e8
+        }
+
+        .swal-button--cancel:active {
+            background-color: #d7d7d7
+        }
+
+        .swal-button--cancel:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+        }
+
+        .swal-button--danger {
+            background-color: #e64942
+        }
+
+        .swal-button--danger:not([disabled]):hover {
+            background-color: #df4740
+        }
+
+        .swal-button--danger:active {
+            background-color: #cf423b
+        }
+
+        .swal-button--danger:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+        }
+
+        .swal-content {
+            padding: 0 20px;
+            margin-top: 20px;
+            font-size: medium
+        }
+
+        .swal-content:last-child {
+            margin-bottom: 20px
+        }
+
+        .swal-content__input,
+        .swal-content__textarea {
+            -webkit-appearance: none;
+            background-color: #fff;
+            border: none;
+            font-size: 14px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .14);
+            padding: 10px 13px;
+            border-radius: 2px;
+            transition: border-color .2s
+        }
+
+        .swal-content__input:focus,
+        .swal-content__textarea:focus {
+            outline: none;
+            border-color: #6db8ff
+        }
+
+        .swal-content__textarea {
+            resize: vertical
+        }
+
+        .swal-button--loading {
+            color: transparent
+        }
+
+        .swal-button--loading~.swal-button__loader {
+            opacity: 1
+        }
+
+        .swal-button__loader {
+            position: absolute;
+            height: auto;
+            width: 43px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            pointer-events: none;
+            opacity: 0
+        }
+
+        .swal-button__loader div {
+            display: inline-block;
+            float: none;
+            vertical-align: baseline;
+            width: 9px;
+            height: 9px;
+            padding: 0;
+            border: none;
+            margin: 2px;
+            opacity: .4;
+            border-radius: 7px;
+            background-color: hsla(0, 0%, 100%, .9);
+            transition: background .2s;
+            -webkit-animation: swal-loading-anim 1s infinite;
+            animation: swal-loading-anim 1s infinite
+        }
+
+        .swal-button__loader div:nth-child(3n+2) {
+            -webkit-animation-delay: .15s;
+            animation-delay: .15s
+        }
+
+        .swal-button__loader div:nth-child(3n+3) {
+            -webkit-animation-delay: .3s;
+            animation-delay: .3s
+        }
+
+        @-webkit-keyframes swal-loading-anim {
+            0% {
+                opacity: .4
+            }
+
+            20% {
+                opacity: .4
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .4
+            }
+        }
+
+        @keyframes swal-loading-anim {
+            0% {
+                opacity: .4
+            }
+
+            20% {
+                opacity: .4
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .4
+            }
+        }
+
+        .swal-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0;
+            overflow-y: auto;
+            background-color: rgba(0, 0, 0, .4);
+            z-index: 10000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .3s
+        }
+
+        .swal-overlay:before {
+            content: " ";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%
+        }
+
+        .swal-overlay--show-modal {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        .swal-overlay--show-modal .swal-modal {
+            opacity: 1;
+            pointer-events: auto;
+            box-sizing: border-box;
+            -webkit-animation: showSweetAlert .3s;
+            animation: showSweetAlert .3s;
+            will-change: transform
+        }
+
+        .swal-modal {
+            width: 478px;
+            opacity: 0;
+            pointer-events: none;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            position: static;
+            margin: 20px auto;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            z-index: 10001;
+            transition: opacity .2s, -webkit-transform .3s;
+            transition: transform .3s, opacity .2s;
+            transition: transform .3s, opacity .2s, -webkit-transform .3s
+        }
+
+        @media (max-width:500px) {
+            .swal-modal {
+                width: calc(100% - 20px)
+            }
+        }
+
+        @-webkit-keyframes showSweetAlert {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            1% {
+                -webkit-transform: scale(.5);
+                transform: scale(.5)
+            }
+
+            45% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+
+            80% {
+                -webkit-transform: scale(.95);
+                transform: scale(.95)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes showSweetAlert {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            1% {
+                -webkit-transform: scale(.5);
+                transform: scale(.5)
+            }
+
+            45% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+
+            80% {
+                -webkit-transform: scale(.95);
+                transform: scale(.95)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://ums.asu.edu.eg/">
+    <meta property="og:image" content="/images/logoums (1).png">
+    <meta property="og:description" content="Digital Management System of Ain Shams University">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <link rel="icon" href="https://ums.asu.edu.eg/favicon.ico" type="image/x-icon">
+    <title>الدرجات | منصة الجامعة الذكية </title>
+
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/animate.min.css">
+    <!-- Font-awesome CSS-->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/all.min.css">
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/fontawesome.min.css">
+    <!-- Owl Caousel CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/owl.theme.default.min.css">
+    <!-- Main Menu CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/meanmenu.min.css">
+    <!-- nivo slider CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/nivo-slider.css" type="text/css">
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/preview.css" type="text/css" media="screen">
+    <!-- Datetime Picker Style CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/jquery.datetimepicker.css">
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/select2.min.css">
+    <!-- Magic popup CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/magnific-popup.css">
+    <!-- Switch Style CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/hover-min.css">
+    <!-- ReImageGrid CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/reImageGrid.css">
+    <!-- Nouislider Style CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/nouislider.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./الدرجات _ منصة الجامعة الذكية_files/style.css">
+
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/fontawesome-all.css" rel="stylesheet">
+    <!--Kendo-->
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--Kendo custom styles-->
+    <style>
+        .k-dropdown .k-state-focused,
+        .k-filebrowser-dropzone,
+        .k-list>.k-state-hover,
+        .k-listbox .k-item:hover:not(.k-state-disabled),
+        .k-mobile-list .k-edit-label.k-check:active,
+        .k-mobile-list .k-item>.k-label:active,
+        .k-mobile-list .k-item>.k-link:active,
+        .k-mobile-list .k-recur-view .k-check:active,
+        .k-pager-wrap .k-link:hover,
+        .k-scheduler .k-scheduler-toolbar ul li.k-state-hover,
+        .k-splitbar-horizontal-hover:hover,
+        .k-splitbar-vertical-hover:hover,
+        .k-state-hover,
+        .k-state-hover:hover {
+            background-color: #0021473d;
+        }
+
+        .k-list>.k-state-focused.k-state-selected,
+        .k-listview>.k-state-focused.k-state-selected,
+        .k-state-focused.k-state-selected,
+        td.k-state-focused.k-state-selected {
+            box-shadow: inset 0 0 10px 3px #002147;
+        }
+
+        .k-draghandle.k-state-selected:hover,
+        .k-ghost-splitbar-horizontal,
+        .k-ghost-splitbar-vertical,
+        .k-list>.k-state-highlight,
+        .k-list>.k-state-selected,
+        .k-marquee-color,
+        .k-panel>.k-state-selected,
+        .k-scheduler .k-scheduler-toolbar .k-state-selected,
+        .k-scheduler .k-today.k-state-selected,
+        .k-state-selected,
+        .k-state-selected:link,
+        .k-state-selected:visited,
+        .k-tool.k-state-selected {
+            background-color: #002147;
+            border-color: #002147;
+        }
+
+        .k-link:link,
+        .k-link:visited,
+        .k-nav-current.k-state-hover .k-link {
+            color: #002147;
+        }
+    </style>
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/kendo.rtl.min.css" rel="stylesheet" type="text/css">
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery-2.2.4.min.js.تنزيل" type="text/javascript"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/modernizr-2.8.3.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/jszip.min.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/kendo.all.min.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/kendo.dropdownlist.min.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/kendo.aspnetmvc.min.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/modernizr-2.8.3.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/kendo.modernizr.custom.js.تنزيل"></script>
+
+
+    <!-- BEGIN SWEETALERT -->
+    <link href="./الدرجات _ منصة الجامعة الذكية_files/sweetalert2.min.css" rel="stylesheet">
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/sweetalert2.min.js.تنزيل"></script>
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/modernizr-2.8.3.min.js.تنزيل"></script>
+
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/sweetalert.min.js.تنزيل"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="./الدرجات _ منصة الجامعة الذكية_files/owl.carousel.min.js.تنزيل" type="text/javascript"></script>
+    <style>
+        .BDTLL_status {
+            cursor: pointer;
+            display: inline;
+            margin-right: 3px;
+            width: 16px;
+            height: 16px;
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2NvbXBvbmVudHMvdG9vbHRpcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIi5CRFRMTF9zdGF0dXMge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgbWFyZ2luLXJpZ2h0OiAzcHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style>
+        .BDTLL_icon_ok {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAADppJREFUeAHtXQl0FEUa/qt7JjO5T46EhExCjJyCcrigT0VAlycurA85srusSEC8hecKorILKKsP5XBlVw5ln0iyggcgyPMEBQVB1qirEKIhCUe4ksmdSWa6a//q2JOZyfT0zKQzGYbUezNdx///VfXN339X/VXVA9AVAoIA0aoWarrFWE3LkwUgyTwVw7WSG0g5AuEaeaDlsSS5nJTss2hZt99AX0rN7sURcSIFMhEbNIxSmqBlwzpbFiGkEtvwDQG6Q6TcjqTTJ860p00+A13VO3uMIIpLsdKRFMBn/vY0trN4sZPYVTjIc9ziuLITn/rTDq+BMmdkDxZt4guUwu3+VBQqPITAh5yOWxB/8sR3vvTJK6AvpV71MBKupEB1vggPVVoCxIYmcx6ak1e87aNHoOnQofrK89Vr8b6Z7a3AK4kOAV+f0CPmIXL0qFWt35wSAb37br7yQvXOLpCVEGKGm86RMEKslKlaShSBNn9dsArt8W/VBFzp5QwjhpUaDm5NR0Xv7NlUFNerMXeVtyJAOG5OYtmJDa05zrE2QJtNfU2CIBwHSg3OpF0pjwgQ0sTzfN/4kuMl7ujamA5BFJ7tAtkdVCp5qJiCTVymROWk0WbTVUNEG/0vPgCd8pWYu/KdEUDQKKcj18WXFBU4lwA4abQo0EVdILtC5H2aYYcYPumOw665zClUYTtzEX+UKHeEXXneIkDqEo00ifz8c5Mjh12jzfTMmC6QHaHxN06jzFYy1pXbDjQVKPPCdQUNEKAC/M5VjB1oLBjoWtiV9hcB2gbLVqAJSfZXbBefCwKEpLjkgN0bh09MzYDm0lLBmDvTta7WNBVb4+2JNVuB1tZKH6GkDGw//gT04qX2SNSE1x2WEtBVvQfF28RGzWaCrPO6aweDHj+BDuK589C05yNo3vE+2I5+G+jqW+rDyQvDNK7sB7PcAMl08HqilzO0uNKqaqi5OweaduzSQpxPMriePSB85p8gdvtWiP1gO+h+M8Infq2IXTFttdFa1SDLaWqGuofmQcNLa3BGjzdTJwTdoAEQu20LRK1ZARAW1gktaK2y44D+tY7G1a9A3QOPAm1yGr+3tiAAMcNdkyAm799AYmMCUJv7KjocaFZt8649UPfoXwBdr+5bEYBc/fXDIXqd1ytPmrcoIECzVjfv3iMBrnkPfBCov2EkGGfd4wOHdqQBA5o12br3c+1a7qekiAXzgUQF3p1jH0f72W6f2MTqalX6pne2Q/2zzyvT8TwQvR5IdDRwPboD3zcbwsaNAf2IYco8DiUkPBzCJoyHpv9sc8jt+GhAgQZB3UZTiwXopQqPPZfHMMKx42Dd9wVYXt2I4/YhEPXyi8Cb0j3yskLDXRMDDnRATYcqAu0gsH1bANV3Tgbx/AVVKfzA/qo0WhOEDNAMGFpVBXULn1HFiEOzA5GRqnRaEoQU0AwY6yefgVBSqooRn9xTlUZLgpADmoEjFBapY4Sb6AIZQhJosfycKoZiJduVG7gQkkDzWZkeERRxVEMruoD2CJJqIY6x+QGeRxXWg1+ritGaIOQ0OuLxx4CLj/OIU9NbgZ2ssMaEFND6cbeCcW6uR5BtBd+D9fMDHmk6ojCwM8OO6AHK5FJ7gXHOLDDe80fAsyeKtVBLE9TNX6BY3pEFQQc0n9UHDDlTlfuMQDJ/BYmOAg7HwrprBgLfry/gbk5lHiwRcdWnNvd+EIp+9kjXUYVBBzTzG7OPlkEoOwU1M3JB/KVYS7E+yQo6oH1qvQqxiIvETfnboHHtOqABHje7Ni0kgWaTkcZ/vAqW/K0A9fWufe6UtGfD1ilNan+lXEIC7iu5B6JWvQBhk+5Ev2jnLsyyHoWkRrOO8b1SpI9h/O0gmqugceUasLyRh09FdZ8449c6hKRGu4LEJjCRy/4KMe/kA0nsnJPUVwTQMvD6YddB7M63gW2yCXQIOtPR/OleaNywySMORIfH+oxGIBGRaB6SgUvvLa0Z8pkZHvlYId87DaI3/guqJ08HwAlMoELQAc32ztm+POhX/7kME4TPnQ2GaZM9TmB0gwdB+MMPQOOKVX7V4w9TSJkO8WQJ1C94Cmpn3Q9suu0phOOUnc0sAxVCCmgZNLac1bBipZx0eyVGAximTnZb1hGZIQk0A8qyaTOwmaGnYGBjbJeAnpRLePjvKB6w2sUO1aMPZSm6V15C19Wb6LD6CPMLXVi8Sgadjfaq1d4QWa1gPXAQDONvU6Tm+2QCiYkGqK39AQHcwRN+e1zZcQTZc6hP75fcSIVxIMI4XHuf5M0hq9AFGrESy8s9IkZtNtE4/8FJkbm573skdCmMLD3GBL/BPtImfmp5EF918AgC3s2F1J4MWdMh9RCPXigESsvLdxOdLtNXkF3lsV39SaeKnk2EpHT0hP8NzY3NlYalQ1qj2YKAa8BjH5W4b28yl5Ky17WMpTM2ZqSjdt6Mm+d74fs42KGfnoSSerTb5zH/HNXRQyOiRxzeNmWb4MhPTh9sxPSSqrSrd9uo+KZjGYuHNNC6flc79ZdWmr8jCfE34UOtxrEga0NWqk205SKYE0VBHOJYxuIIOPtqCaivR8xHqtPXp3/MEe7lk7NP7v+1RLrEnSr8hqaOvBbimp00O2SB1t90I7CHnRxoQ8NXCPI4BLlBzjNtMsWBFRZaRSvaVwi3gykTKFwR+FiknSxScTIC/hXKfKpkdsk+mVzS7tNyquUakjaaxKETacnT9p6iuThAIiLGOIKcuS7zDmqlv6CJYIuI/r8QkcIolPGZaZ1pFf5wRnulLpGQA5qtObLzKuzKgnjhwrdok8ciyPY3MyIoTwgg7ESt1MaVh68MQy1/DJrhUPa67CQXjKVkaACNC7O64UMh8vllEPvhTmCnsVig9fW1XPfutyHI9vl4xvoMfOsZfQGLNe87yh3cTJo/HrRlULzUAIevoLPRumvQ4TOfmUzlQHDLLZtosFNWCCTo+uMqOK6MuwZiNE5FkO1HaVGTH0G7+oArnZZpNCNDaupqPkLTNLb4vmL7EYfgAxq1UdbI9gBAy88d5lKS98gyMjZkjEOQV3r7wJP5/LwOE0FkrsF7ZX7Nbx9ZcKdeUa1Ics+ZchuyPsgyUJFuRJB5Oa+jr2hGZprWm26W6wlJoOnFi4fRZPwkd1I4LTyMHe8tpwN2pfDqgK0DpJXhkAQah3d/l8FkY2U0GYvkdCCv+OP2bahumMbqDD2gLXgIPSxstx1QG/we421GAfZyPyM6TgcxYTGq3GjFchiRBHRUnL5OleMyIRAuXSxAs9E6/aWAbkxtQ2pUKuyduheOzjgKfeJaxutKNaBWj+3zRp/uEtD4ttgGdG7bhyJKTMGaz/ZtWPHdHJa33gZobF4qt3PouqERqFHoM9YupESlQP6d+ZAWnYZaygFO3z0LxwewYBHuchjekbM4xI/1zNW+Uuuhw2C+5XZ1Id68dqKxEdB/gZMSdF3YZAUm9Umni+xmo4KruAad820H2OotcEvRI6IH5E9oARnfeAnz9s6Dspoyt7SOmajV/e1AY98QaOjnSKB5HIHp2B2dlPXBHlCbk+0JDxEDb4Bu4d3gdN1pRapuEd0kkNNj0gEfrvD454/Dzl92KtI7FqCbNU0yHSwT/zRgv2Ph5RhH28xWPuwB3ZjMn6wa8u7Ig/3T98OsQbPc0iYaEyWQM+MypZe8LPxiIbxX9J5bWneZlNBWoDk9t90d0WWVR8E+3WbtxlvWrYPHtU81zTXSSYFnRj4DMwbMcCqON8ZD3oQ8yIrLkkBetH8RbC3EXao+BNToloch42F/DoAaUeIDf9CRIrBxTo2iUOWUVkjM3zcfCitbFreXjFoCOf2kERnEGmJhyx1b4OqElgWExV8uhvzj+QpSPGZX2k0HI0PzkeeRPMgLceTU3amJBC44pRUSZosZcnblQJG5SNLs5258Du4deK8Ecv/E/hLX0q+WwuafNitIUMkmcNYZaD5qBWp1pQpb0Bajh8Np9yL25Yy3ja2wVEhgF1cVS2AvHrUYBiYNlNiXH1oOr//vdW9FtaHDO80Z6PiSArzVyPI2lJdJBt6RiWbTELv5oDxlPg+7w1+tGxcbL8L0XdOhtKbUTrri8ApY//16e9qfCNroI04azYQkGMRX8OLFqXV/quxYHlw/5QRaf6tcS8nMEgtq0wE57c31fMN5mPb+NDhVewpWH10NawvWesOmTIO/fjiE72wDtPTeY55MRE1wWilWlhRkJdLuodY2oTb5tDmGcZbXl8Pot0ZLQLdK8i+G9R8+dt+x8jZAM3FJpUXHCEem44aQzjmH4F+fJC5s822O7JHxkcy4mh3zvInj9gNvyLyh2cSI3ALNChJKT3wAHDdXaecNownGgLPBzIq0LDvYP075sY7juH92RlvRKpwwZZteY3UrAs0K2f+KUI6Mx2GTzxrB+DsroDthoWPduLvoRRy7Ks+vHYk1jOOM8Ml9o/dJt4ZHoFmdSWUnPtHp9dejZhdo2IaOFjW6Oi17uFwJPhSreOBnsomCnNfRV8Tr3dLZpe/K9agCzQhji48VJeT+YSiakj+jDSyTmYP5ivvf1rD/+5LbWDyn+BPsvIcX6smU7b+iySiICY9xmssjbr4F9u8WZuHsLBw2TcHJ/w2oIvbO+CYpANSEPI07PZ9zrAkXTPE/GekTjnkax8/g3TMKtxo4KaTPQDs2qqZv38TmBnECvt11OGpLCt6Y6JakKQi+4tYoR/6OjqNmWfU6bkzMycIWR8avFeJ+uWXY1qe1rh/rO4Iu10mFswrPuspuF9Cuwi6nNO5YmoJ+5dXYZq981qp9I7CZ6MkcNklyR3vFAs3AwN1EsTgyWI6Az8WkV88rVxDxTv6a8OSJk7knv3Atc0xf0UDLQGS/np1ptVlz8LmTg/ZbdZUJTQQ7hbQHRzF5uF13hyzH07ULaBd0Ml7LGIx//nMtTp3TRCKmoS1PQa2tQ1DP4vUs/hg/RMZF7sWJULMLq8fk/wHdfpGX0NXkrQAAAABJRU5ErkJggg==);
+        }
+
+        .BDTLL_icon_critical {
+            background-image: url(data:image/png;base64,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);
+        }
+
+        .BDTLL_icon_alert {
+            background-image: url(data:image/png;base64,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);
+        }
+
+        .BDTLL_icon_disabled {
+            background-image: url(data:image/png;base64,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);
+        }
+
+        .BDTLL_icon_whitelisted {
+            background-image: url(data:image/png;base64,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);
+        }
+
+        .BDTLL_Search_Popup {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui;
+
+            position: absolute !important;
+            min-height: 70px !important;
+
+            border-style: solid !important;
+            border-width: 1px !important;
+            border-radius: 5px !important;
+
+            overflow: hidden !important;
+            z-index: 999999999999999 !important;
+
+            background-color: rgb(255, 255, 255) !important;
+            border-color: rgba(100, 100, 100, 0.9) !important;
+        }
+
+        .BDTLL_Search_Popup>.BDTLL_left_box {
+            position: absolute !important;
+            top: 0px !important;
+            height: auto !important;
+            bottom: 0px !important;
+
+            left: 0px !important;
+            width: 92px !important;
+
+            background-size: 50px 50px !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+
+            background-color: rgb(240, 242, 246) !important;
+        }
+
+        .BDTLL_Search_Popup>.BDTLL_right_box {
+            display: inline-block !important;
+            margin-left: 92px !important;
+            width: 210pt !important;
+
+            box-sizing: border-box !important;
+            padding-left: 10px !important;
+            padding-right: 5px !important;
+        }
+
+        .BDTLL_Search_Popup p {
+            white-space: pre-wrap !important;
+            word-wrap: normal !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            text-align: left;
+        }
+
+        .BDTLL_Search_Popup .BDTLL_title {
+            font-size: 16px !important;
+            margin-top: 12px !important;
+        }
+
+        .BDTLL_Search_Popup .BDTLL_description {
+            font-size: 12px !important;
+            margin-top: 5px !important;
+        }
+
+        .BDTLL_Search_Popup .BDTLL_web_protection {
+            font-size: 11px !important;
+            margin-top: 15px !important;
+            margin-bottom: 10px !important;
+        }
+
+        .BDTLL_Search_Popup .BDTLL_strong {
+            color: rgb(7, 20, 45) !important;
+        }
+
+        .BDTLL_Search_Popup .BDTLL_mild {
+            color: rgb(81, 91, 109) !important;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .BDTLL_Search_Popup {
+                background-color: rgb(56, 67, 87) !important;
+                border-color: rgba(169, 169, 169, 0.9) !important;
+            }
+
+            .BDTLL_Search_Popup>.BDTLL_left_box {
+                background-color: rgb(7, 20, 45) !important;
+            }
+
+            .BDTLL_Search_Popup .BDTLL_strong {
+                color: rgb(239, 241, 249) !important;
+            }
+
+            .BDTLL_Search_Popup .BDTLL_mild {
+                color: rgb(217, 217, 217) !important;
+            }
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2FuYWx5emVyUG9wdXAvYW5hbHl6ZXJQYWdlU3RhdHVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHlEQUFnRDtBQUNwRDs7QUFFQTtJQUNJLHlEQUFzRDtBQUMxRDs7QUFFQTtJQUNJLHlEQUFtRDtBQUN2RDs7QUFFQTtJQUNJLHlEQUFzRDtBQUMxRDs7QUFFQTtJQUNJLHlEQUF5RDtBQUM3RDs7QUFFQTtJQUNJLCtFQUErRTs7Q0FFbEYsNkJBQTZCO0NBQzdCLDJCQUEyQjs7Q0FFM0IsOEJBQThCO0NBQzlCLDRCQUE0QjtDQUM1Qiw2QkFBNkI7O0NBRTdCLDJCQUEyQjtDQUMzQixtQ0FBbUM7O0lBRWhDLCtDQUErQztJQUMvQyxpREFBaUQ7QUFDckQ7O0FBRUE7Q0FDQyw2QkFBNkI7Q0FDN0IsbUJBQW1CO0NBQ25CLHVCQUF1QjtDQUN2QixzQkFBc0I7O0NBRXRCLG9CQUFvQjtDQUNwQixzQkFBc0I7O0NBRXRCLHFDQUFxQztDQUNyQyx1Q0FBdUM7Q0FDdkMsc0NBQXNDOztJQUVuQywrQ0FBK0M7QUFDbkQ7O0FBRUE7Q0FDQyxnQ0FBZ0M7Q0FDaEMsNEJBQTRCO0NBQzVCLHVCQUF1Qjs7Q0FFdkIsaUNBQWlDO0NBQ2pDLDZCQUE2QjtJQUMxQiw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSxnQ0FBZ0M7SUFDaEMsNEJBQTRCO0lBQzVCLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0NBQ0MsMEJBQTBCO0NBQzFCLDJCQUEyQjtBQUM1Qjs7QUFFQTtDQUNDLDBCQUEwQjtDQUMxQiwwQkFBMEI7QUFDM0I7O0FBRUE7Q0FDQywwQkFBMEI7Q0FDMUIsMkJBQTJCO0NBQzNCLDhCQUE4QjtBQUMvQjs7QUFFQTtJQUNJLGdDQUFnQztBQUNwQzs7QUFFQTtJQUNJLGtDQUFrQztBQUN0Qzs7QUFFQTtJQUNJO1FBQ0ksNENBQTRDO1FBQzVDLGlEQUFpRDtJQUNyRDs7SUFFQTtRQUNJLDJDQUEyQztJQUMvQzs7SUFFQTtRQUNJLG9DQUFvQztJQUN4Qzs7SUFFQTtRQUNJLG9DQUFvQztJQUN4QztBQUNKIiwic291cmNlc0NvbnRlbnQiOlsiLkJEVExMX2ljb25fb2sge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9pbWcvYW5hbHl6ZXJfb2sucG5nKTtcbn1cblxuLkJEVExMX2ljb25fY3JpdGljYWwge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9pbWcvYW5hbHl6ZXJfY3JpdGljYWwucG5nKTtcbn1cblxuLkJEVExMX2ljb25fYWxlcnQge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9pbWcvYW5hbHl6ZXJfYWxlcnQucG5nKTtcbn1cblxuLkJEVExMX2ljb25fZGlzYWJsZWQge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9pbWcvYW5hbHl6ZXJfZGlzYWJsZWQucG5nKTtcbn1cblxuLkJEVExMX2ljb25fd2hpdGVsaXN0ZWQge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9pbWcvYW5hbHl6ZXJfd2hpdGVsaXN0ZWQucG5nKTtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCB7XG4gICAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsIHN5c3RlbS11aTtcblxuXHRwb3NpdGlvbjogYWJzb2x1dGUgIWltcG9ydGFudDtcblx0bWluLWhlaWdodDogNzBweCAhaW1wb3J0YW50O1xuXG5cdGJvcmRlci1zdHlsZTogc29saWQgIWltcG9ydGFudDtcblx0Ym9yZGVyLXdpZHRoOiAxcHggIWltcG9ydGFudDtcblx0Ym9yZGVyLXJhZGl1czogNXB4ICFpbXBvcnRhbnQ7XG5cblx0b3ZlcmZsb3c6IGhpZGRlbiAhaW1wb3J0YW50O1xuXHR6LWluZGV4OiA5OTk5OTk5OTk5OTk5OTkgIWltcG9ydGFudDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KSAhaW1wb3J0YW50O1xuICAgIGJvcmRlci1jb2xvcjogcmdiYSgxMDAsIDEwMCwgMTAwLCAwLjkpICFpbXBvcnRhbnQ7XG59XG5cbi5CRFRMTF9TZWFyY2hfUG9wdXAgPiAuQkRUTExfbGVmdF9ib3gge1xuXHRwb3NpdGlvbjogYWJzb2x1dGUgIWltcG9ydGFudDtcblx0dG9wOiAwcHggIWltcG9ydGFudDtcblx0aGVpZ2h0OiBhdXRvICFpbXBvcnRhbnQ7XG5cdGJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG5cblx0bGVmdDogMHB4ICFpbXBvcnRhbnQ7XG5cdHdpZHRoOiA5MnB4ICFpbXBvcnRhbnQ7XG5cblx0YmFja2dyb3VuZC1zaXplOiA1MHB4IDUwcHggIWltcG9ydGFudDtcblx0YmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdCAhaW1wb3J0YW50O1xuXHRiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgIWltcG9ydGFudDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNDAsIDI0MiwgMjQ2KSAhaW1wb3J0YW50O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwID4gLkJEVExMX3JpZ2h0X2JveCB7XG5cdGRpc3BsYXk6IGlubGluZS1ibG9jayAhaW1wb3J0YW50O1xuXHRtYXJnaW4tbGVmdDogOTJweCAhaW1wb3J0YW50O1xuXHR3aWR0aDogMjEwcHQgIWltcG9ydGFudDtcblxuXHRib3gtc2l6aW5nOiBib3JkZXItYm94ICFpbXBvcnRhbnQ7XG5cdHBhZGRpbmctbGVmdDogMTBweCAhaW1wb3J0YW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDVweCAhaW1wb3J0YW50O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIHAge1xuICAgIHdoaXRlLXNwYWNlOiBwcmUtd3JhcCAhaW1wb3J0YW50O1xuICAgIHdvcmQtd3JhcDogbm9ybWFsICFpbXBvcnRhbnQ7XG4gICAgbWFyZ2luOiAwcHggIWltcG9ydGFudDtcbiAgICBwYWRkaW5nOiAwcHggIWltcG9ydGFudDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF90aXRsZSB7XG5cdGZvbnQtc2l6ZTogMTZweCAhaW1wb3J0YW50O1xuXHRtYXJnaW4tdG9wOiAxMnB4ICFpbXBvcnRhbnQ7XG59XG5cbi5CRFRMTF9TZWFyY2hfUG9wdXAgLkJEVExMX2Rlc2NyaXB0aW9uIHtcblx0Zm9udC1zaXplOiAxMnB4ICFpbXBvcnRhbnQ7XG5cdG1hcmdpbi10b3A6IDVweCAhaW1wb3J0YW50O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF93ZWJfcHJvdGVjdGlvbiB7XG5cdGZvbnQtc2l6ZTogMTFweCAhaW1wb3J0YW50O1xuXHRtYXJnaW4tdG9wOiAxNXB4ICFpbXBvcnRhbnQ7XG5cdG1hcmdpbi1ib3R0b206IDEwcHggIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCAuQkRUTExfc3Ryb25nIHtcbiAgICBjb2xvcjogcmdiKDcsIDIwLCA0NSkgIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCAuQkRUTExfbWlsZCB7XG4gICAgY29sb3I6IHJnYig4MSwgOTEsIDEwOSkgIWltcG9ydGFudDtcbn1cblxuQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykge1xuICAgIC5CRFRMTF9TZWFyY2hfUG9wdXAge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNTYsIDY3LCA4NykgIWltcG9ydGFudDtcbiAgICAgICAgYm9yZGVyLWNvbG9yOiByZ2JhKDE2OSwgMTY5LCAxNjksIDAuOSkgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuQkRUTExfU2VhcmNoX1BvcHVwID4gLkJEVExMX2xlZnRfYm94IHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDcsIDIwLCA0NSkgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF9zdHJvbmcge1xuICAgICAgICBjb2xvcjogcmdiKDIzOSwgMjQxLCAyNDkpICFpbXBvcnRhbnQ7XG4gICAgfVxuICAgIFxuICAgIC5CRFRMTF9TZWFyY2hfUG9wdXAgLkJEVExMX21pbGQge1xuICAgICAgICBjb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpICFpbXBvcnRhbnQ7XG4gICAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */
+    </style>
+</head>
+<!-- Head End -->
+<!-- Body Start -->
+
+<body dir="rtl">
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="wrapper" style="position: relative;">
+
+        <!-- Header Start -->
+
+        <style>
+            .navbar-nav {
+                flex-direction: row !important;
+            }
+        </style>
+        <link href="./الدرجات _ منصة الجامعة الذكية_files/Menu.css" rel="stylesheet">
+        <header>
+            <div id="header1" class="header2-area">
+
+
+                <script src="./الدرجات _ منصة الجامعة الذكية_files/Language.js.تنزيل"></script>
+                <style>
+                    .main-menu-area .header-search {
+                        margin: 0px 0px !important;
+                    }
+                </style>
+                <!-- TopHeader Start -->
+                <div class="header-top-area">
+                    <div class="container">
+                        <div class="top-bar-border">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                    <div class="header-top-left">
+                                        <ul class="Mobile-Hidden">
+                                            <li><img style="height:25px;"
+                                                    src="./الدرجات _ منصة الجامعة الذكية_files/arms_of_Egypt_(Official).svg">
+                                            </li>
+                                            <li style="text-transform:capitalize;"><i class="fa fa-play-circle"
+                                                    aria-hidden="true"></i><a
+                                                    href="https://ums.asu.edu.eg/App/VideosSection">فيديوهات إرشادية</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="header-top-right">
+                                        <ul class="main-menu-area">
+                                            <li>
+                                                <div class="header-search d-none d-lg-block">
+                                                    <form action="https://ums.asu.edu.eg/Search/GetSearchResult"
+                                                        method="GET">
+                                                        <input type="text" class="search-form" name="UserQuery"
+                                                            placeholder="بحث" required="">
+                                                        <a href="https://ums.asu.edu.eg/StudentGrades#"
+                                                            class="search-button" id="search-button"><i
+                                                                class="fa fa-search" aria-hidden="true"></i></a>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="login-btn-area" href="https://ums.asu.edu.eg/App/Logout"
+                                                    id="logout-button"><i class="fa fa-lock"></i> تسجيل الخروج</a>
+                                            </li>
+
+
+                                            <li><a class="login-btn-area"
+                                                    onclick="SelectedIndexChanged(&#39;en&#39;); location.reload();"
+                                                    href="https://ums.asu.edu.eg/StudentGrades#"> <img
+                                                        src="./الدرجات _ منصة الجامعة الذكية_files/gb.png"
+                                                        alt="English">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TopHeader End -->
+
+
+                <!-- MenuHeader Start -->
+                <div class="main-menu-area bg-textPrimary" id="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3 col-md-3">
+                                <a href="https://ums.asu.edu.eg/"><img class="img-responsive"
+                                        src="./الدرجات _ منصة الجامعة الذكية_files/logoums (1).png" alt="logo"></a>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-7">
+                                <nav id="desktop-nav">
+                                    <ul style="text-align:center;">
+                                        <li class=""><a href="https://ums.asu.edu.eg/UserInformation/MyAccount"> <span
+                                                    class="title">الصفحة الرئيسية</span></a></li>
+                                        <li class=""><a href="https://ums.asu.edu.eg/Services"> <span
+                                                    class="title">خدمات عامة</span></a></li>
+                                        <li class=""><a href="javascript:;"> <span>خدمات دراسية</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul class="mega-menu-area sub-mega-menu">
+                                                <li><a href="https://ums.asu.edu.eg/MilitaryStudentFamilyDetails"> <span
+                                                            class="title">بيانات مطلوبة</span></a></li>
+                                                <li><a href="https://ums.asu.edu.eg/UserInformation/CurrentCourse">
+                                                        <span class="title">المقررات</span></a><a
+                                                        href="https://ums.asu.edu.eg/Schedule"> <span
+                                                            class="title">الجدول</span></a><a
+                                                        href="https://ums.asu.edu.eg/UserInformation/AllStudentCourseQRs">
+                                                        <span class="title">لجان الاختبارات : رموز ال QR</span></a><a
+                                                        href="https://ums.asu.edu.eg/YearWorkGradesForStudent"> <span
+                                                            class="title">درجات اعمال السنة</span></a><a
+                                                        href="https://ums.asu.edu.eg/StudentGrades"> <span
+                                                            class="title">الدرجات</span></a></li>
+                                                <li><a
+                                                        href="https://ums.asu.edu.eg/RegisterElectiveCourse/Registration">
+                                                        <span class="title">تسجيل المقررات الدراسية</span></a><a
+                                                        href="https://ums.asu.edu.eg/OpenCourseRequest"> <span
+                                                            class="title">طلب فتح مقرر للتسجيل</span></a><a
+                                                        href="https://ums.asu.edu.eg/WithdrawCourseRequest"> <span
+                                                            class="title">طلب انسحاب من مقرر</span></a><a
+                                                        href="https://ums.asu.edu.eg/Appeal"> <span
+                                                            class="title">الالتماسات</span></a><a
+                                                        href="https://ums.asu.edu.eg/StudentGraduationRequirement">
+                                                        <span class="title">متطلبات الجامعه</span></a></li>
+                                                <li><a href="https://ums.asu.edu.eg/Bifurcation"> <span
+                                                            class="title">التشعيب</span></a><a
+                                                        href="https://ums.asu.edu.eg/Awards"> <span
+                                                            class="title">الجوائز</span></a><a
+                                                        href="https://ums.asu.edu.eg/UserInformation/StudentWarnings">
+                                                        <span class="title">انذار أكاديمى</span></a><a
+                                                        href="https://ums.asu.edu.eg/MilitaryEducationCourseRegistration">
+                                                        <span class="title">تسجيل دورة التربية العسكرية</span></a><a
+                                                        href="https://ums.asu.edu.eg/MilitaryCoursePreview"> <span
+                                                            class="title">بيانات دورة التربية العسكرية</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="javascript:;"> <span>الشكاوى / المقترحات</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul>
+                                                <li class=" "><a href="https://ums.asu.edu.eg/Complaint/ComplaintList">
+                                                        <span class="title">الشكاوى / المقترحات</span></a></li>
+                                                <li class=" "><a href="https://ums.asu.edu.eg/GeneralQuestionnaire">
+                                                        <span class="title">رأيك يهمنا</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="javascript:;"> <span>سجل المدفوعات</span><span
+                                                    class="nav-icon nav-arrow"></span></a>
+                                            <ul>
+                                                <li class=" "><a href="https://ums.asu.edu.eg/Home/Payment"> <span
+                                                            class="title">المدفوعات المستحقة</span></a></li>
+                                                <li class=" "><a href="https://ums.asu.edu.eg/Home/History"> <span
+                                                            class="title">سجل التعاملات</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="https://ums.asu.edu.eg/InnerAnnouncement"> <span
+                                                    class="title">الأخبار</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-3 col-lg-2 col-md-2">
+                                <nav id="desktop-nav">
+                                    <ul class="header-user">
+                                        <li>
+                                            <a href="https://ums.asu.edu.eg/StudentGrades#" dir="rtl"><i
+                                                    class="fa-solid fa-user" style="padding: 0 8px;"></i>محمد حامد
+                                                ابراهيم رفاعى صالح</a>
+                                            <ul>
+                                                <li><a href="https://ums.asu.edu.eg/UserInformation">الصفحة الشخصية</a>
+                                                </li>
+                                                <li><a href="https://ums.asu.edu.eg/App/Logout">تسجيل الخروج</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MenuHeader End -->
+                <div class="mobile-menu-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown" style="display: block;">
+                                        <ul>
+                                            <li>
+                                                <a href="https://ums.asu.edu.eg/StudentGrades#"><i
+                                                        class="fa-solid fa-user"></i>محمد حامد ابراهيم رفاعى صالح</a>
+                                                <ul>
+                                                    <li><a href="https://ums.asu.edu.eg/UserInformation">الصفحة
+                                                            الشخصية</a></li>
+                                                    <li><a href="https://ums.asu.edu.eg/App/Logout">تسجيل الخروج</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="https://ums.asu.edu.eg/UserInformation/MyAccount">
+                                                    <span class="title">الصفحة الرئيسية</span></a></li>
+                                            <li class=""><a href="https://ums.asu.edu.eg/Services"> <span
+                                                        class="title">خدمات عامة</span></a></li>
+                                            <li class=""><a href="javascript:;"> <span>خدمات دراسية</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul class="mega-menu-area sub-mega-menu">
+                                                    <li><a href="https://ums.asu.edu.eg/MilitaryStudentFamilyDetails">
+                                                            <span class="title">بيانات مطلوبة</span></a></li>
+                                                    <li><a href="https://ums.asu.edu.eg/UserInformation/CurrentCourse">
+                                                            <span class="title">المقررات</span></a><a
+                                                            href="https://ums.asu.edu.eg/Schedule"> <span
+                                                                class="title">الجدول</span></a><a
+                                                            href="https://ums.asu.edu.eg/UserInformation/AllStudentCourseQRs">
+                                                            <span class="title">لجان الاختبارات : رموز ال
+                                                                QR</span></a><a
+                                                            href="https://ums.asu.edu.eg/YearWorkGradesForStudent">
+                                                            <span class="title">درجات اعمال السنة</span></a><a
+                                                            href="https://ums.asu.edu.eg/StudentGrades"> <span
+                                                                class="title">الدرجات</span></a></li>
+                                                    <li><a
+                                                            href="https://ums.asu.edu.eg/RegisterElectiveCourse/Registration">
+                                                            <span class="title">تسجيل المقررات الدراسية</span></a><a
+                                                            href="https://ums.asu.edu.eg/OpenCourseRequest"> <span
+                                                                class="title">طلب فتح مقرر للتسجيل</span></a><a
+                                                            href="https://ums.asu.edu.eg/WithdrawCourseRequest"> <span
+                                                                class="title">طلب انسحاب من مقرر</span></a><a
+                                                            href="https://ums.asu.edu.eg/Appeal"> <span
+                                                                class="title">الالتماسات</span></a><a
+                                                            href="https://ums.asu.edu.eg/StudentGraduationRequirement">
+                                                            <span class="title">متطلبات الجامعه</span></a></li>
+                                                    <li><a href="https://ums.asu.edu.eg/Bifurcation"> <span
+                                                                class="title">التشعيب</span></a><a
+                                                            href="https://ums.asu.edu.eg/Awards"> <span
+                                                                class="title">الجوائز</span></a><a
+                                                            href="https://ums.asu.edu.eg/UserInformation/StudentWarnings">
+                                                            <span class="title">انذار أكاديمى</span></a><a
+                                                            href="https://ums.asu.edu.eg/MilitaryEducationCourseRegistration">
+                                                            <span class="title">تسجيل دورة التربية العسكرية</span></a><a
+                                                            href="https://ums.asu.edu.eg/MilitaryCoursePreview"> <span
+                                                                class="title">بيانات دورة التربية العسكرية</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="javascript:;"> <span>الشكاوى / المقترحات</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul>
+                                                    <li class=" "><a
+                                                            href="https://ums.asu.edu.eg/Complaint/ComplaintList"> <span
+                                                                class="title">الشكاوى / المقترحات</span></a></li>
+                                                    <li class=" "><a href="https://ums.asu.edu.eg/GeneralQuestionnaire">
+                                                            <span class="title">رأيك يهمنا</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="javascript:;"> <span>سجل المدفوعات</span><span
+                                                        class="nav-icon nav-arrow"></span></a>
+                                                <ul>
+                                                    <li class=" "><a href="https://ums.asu.edu.eg/Home/Payment"> <span
+                                                                class="title">المدفوعات المستحقة</span></a></li>
+                                                    <li class=" "><a href="https://ums.asu.edu.eg/Home/History"> <span
+                                                                class="title">سجل التعاملات</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a href="https://ums.asu.edu.eg/InnerAnnouncement"> <span
+                                                        class="title">الأخبار</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Inner Header Start -->
+
+        <!-- Inner Page Banner Area Start Here -->
+        <div class="inner-page-banner-area" style="background-image: url(&#39;../../assets/images/banner1.jpg&#39;);">
+            <div class="container" style="max-height: 0px !important;">
+                <div class="pagination-area" style="margin-top:15rem">
+                    <h1>الدرجات</h1>
+                    <ul>
+                        <li><a href="https://ums.asu.edu.eg/UserInformation/MyAccount">الرئيسية</a> -</li>
+                        <li>الدرجات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Page Banner Area End Here -->
+        <!-- PageBody Start -->
+
+
+
+        <style>
+            /* ===== Layout ===== */
+            .ums-grades {
+                min-height: calc(100vh - 250px);
+                padding: 24px 16px 60px;
+            }
+
+            .ums-grades * {
+                box-sizing: border-box;
+            }
+
+            /* ===== Status banners (held / unpaid / questionnaires) ===== */
+            .ums-banner {
+                display: flex;
+                gap: 16px;
+                align-items: flex-start;
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 20px 24px;
+                margin-bottom: 16px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+                border: 1px solid #e5e7eb;
+            }
+
+            .ums-banner__icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 10px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                flex-shrink: 0;
+            }
+
+            .ums-banner__body h5 {
+                margin: 0 0 6px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #111827;
+            }
+
+            .ums-banner__body p {
+                margin: 0;
+                color: #4b5563;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .ums-banner__body a {
+                color: #002147;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+
+            .ums-banner--danger {
+                border-inline-start: 4px solid #dc2626;
+            }
+
+            .ums-banner--danger .ums-banner__icon {
+                background: #fee2e2;
+                color: #b91c1c;
+            }
+
+            .ums-banner--warning {
+                border-inline-start: 4px solid #d97706;
+            }
+
+            .ums-banner--warning .ums-banner__icon {
+                background: #fef3c7;
+                color: #b45309;
+            }
+
+            .ums-banner--info {
+                border-inline-start: 4px solid #2563eb;
+            }
+
+            .ums-banner--info .ums-banner__icon {
+                background: #dbeafe;
+                color: #1d4ed8;
+            }
+
+            /* ===== Academic year (top accordion) ===== */
+            .ums-year {
+                background: #ffffff;
+                border-radius: 14px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+                margin-bottom: 18px;
+                overflow: hidden;
+            }
+
+            .ums-year__header {
+                background: linear-gradient(135deg, #002147 0%, #003366 100%);
+                color: #ffffff;
+                padding: 18px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                user-select: none;
+                transition: filter .15s ease;
+            }
+
+            .ums-year__header:hover {
+                filter: brightness(1.08);
+            }
+
+            .ums-year__header-title {
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: .2px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .ums-year__header-title i {
+                opacity: .85;
+            }
+
+            .ums-year__chevron {
+                transition: transform .25s ease;
+                font-size: 14px;
+            }
+
+            .ums-year__header[aria-expanded="true"] .ums-year__chevron {
+                transform: rotate(180deg);
+            }
+
+            .ums-year__body {
+                padding: 22px;
+                background: #f8fafc;
+            }
+
+            /* ===== Round section ===== */
+            .ums-round {
+                margin-bottom: 28px;
+            }
+
+            .ums-round:last-child {
+                margin-bottom: 0;
+            }
+
+            .ums-round__title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffffff;
+                margin: 0 0 14px;
+                padding: 10px 14px;
+                background: #002f5f;
+                border-radius: 8px;
+                border-inline-start: 4px solid #fdc507;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .ums-round__title i {
+                color: #0056b3;
+            }
+
+            /* ===== Summary hero ===== */
+            .ums-hero {
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 22px 24px;
+                margin-bottom: 18px;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+                border: 1px solid #e5e7eb;
+            }
+
+            .ums-hero__top {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 14px;
+                padding-bottom: 16px;
+                border-bottom: 1px dashed #e5e7eb;
+                margin-bottom: 16px;
+            }
+
+            .ums-hero__grade-letter {
+                background: linear-gradient(135deg, #002147, #0056b3);
+                color: #ffffff;
+                font-size: 26px;
+                font-weight: 700;
+                min-width: 64px;
+                height: 64px;
+                border-radius: 12px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: .5px;
+                padding: 0 12px;
+            }
+
+            .ums-hero__grade-text {
+                font-size: 18px;
+                font-weight: 600;
+                color: #002147;
+                line-height: 1.4;
+            }
+
+            .ums-hero__grade-text small {
+                display: block;
+                color: #6b7280;
+                font-size: 12px;
+                font-weight: 500;
+                margin-top: 2px;
+            }
+
+            .ums-honor {
+                background: linear-gradient(135deg, #f59e0b, #d97706);
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 13px;
+                padding: 6px 12px;
+                border-radius: 20px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                box-shadow: 0 2px 4px rgba(217, 119, 6, .3);
+            }
+
+            .ums-stats {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 12px;
+            }
+
+            .ums-stat {
+                background: #f9fafb;
+                border-radius: 8px;
+                padding: 12px 14px;
+                border: 1px solid #f1f5f9;
+            }
+
+            .ums-stat__label {
+                color: #6b7280;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+            }
+
+            .ums-stat__value {
+                color: #002147;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+
+            .ums-stat__divider {
+                color: #9ca3af;
+                font-weight: 500;
+                margin: 0 2px;
+            }
+
+            .ums-stat__max {
+                color: #6b7280;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            /* ===== Term card ===== */
+            .ums-term {
+                background: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                margin-bottom: 12px;
+                overflow: hidden;
+            }
+
+            .ums-term__btn {
+                width: 100%;
+                background: transparent;
+                border: 0;
+                padding: 14px 18px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                text-align: start;
+                cursor: pointer;
+                transition: background .15s ease;
+            }
+
+            .ums-term__btn:hover {
+                background: #f9fafb;
+            }
+
+            .ums-term__counter {
+                background: #002147;
+                color: #ffffff;
+                font-weight: 600;
+                min-width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                flex-shrink: 0;
+            }
+
+            .ums-term__name {
+                font-size: 15px;
+                font-weight: 600;
+                color: #111827;
+                flex-grow: 1;
+            }
+
+            .ums-term__chips {
+                display: inline-flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .ums-term__caret {
+                color: #9ca3af;
+                transition: transform .2s ease;
+            }
+
+            .ums-term__btn[aria-expanded="true"] .ums-term__caret {
+                transform: rotate(180deg);
+            }
+
+            .ums-term__body {
+                padding: 18px;
+                background: #fafbfc;
+                border-top: 1px solid #f1f5f9;
+            }
+
+            .ums-term--empty .ums-term__name {
+                color: #6b7280;
+                font-weight: 500;
+            }
+
+            /* Chips on term header */
+            .ums-chip {
+                padding: 4px 10px;
+                border-radius: 6px;
+                font-size: 12px;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+            .ums-chip--grade {
+                background: #e0e7ff;
+                color: #3730a3;
+            }
+
+            .ums-chip--gpa {
+                background: #dcfce7;
+                color: #166534;
+            }
+
+            /* Payment-block message (overrides per-term grades) */
+            .ums-payment-block {
+                background: #fff7ed;
+                border: 1px dashed #fdba74;
+                color: #9a3412;
+                padding: 16px 20px;
+                border-radius: 8px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .ums-payment-block i {
+                font-size: 18px;
+            }
+
+            /* Info notice: term has summary (chips) but no per-course detail yet */
+            .ums-no-courses {
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                border: 2px dashed #38bdf8;
+                color: #0c4a6e;
+                padding: 36px 28px;
+                border-radius: 14px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 14px;
+            }
+
+            .ums-no-courses__icon {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: #ffffff;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
+            }
+
+            .ums-no-courses__icon i {
+                font-size: 28px;
+                color: #002147;
+            }
+
+            .ums-no-courses__title {
+                font-size: 17px;
+                font-weight: 700;
+                color: #0c4a6e;
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            /* ===== Course card ===== */
+            .ums-course {
+                background: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                padding: 16px;
+                height: 100%;
+                transition: transform .15s ease, box-shadow .15s ease;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .ums-course:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 33, 71, .08);
+                border-color: #cbd5e1;
+            }
+
+            .ums-course__header {
+                margin-bottom: 12px;
+                min-height: 64px;
+            }
+
+            .ums-course__code {
+                display: inline-block;
+                background: #f1f5f9;
+                color: #002147;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 11.5px;
+                font-weight: 700;
+                padding: 3px 8px;
+                border-radius: 4px;
+                letter-spacing: .5px;
+                margin-bottom: 6px;
+                border: 1px solid #e2e8f0;
+            }
+
+            .ums-course__title {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: #111827;
+                line-height: 1.45;
+                margin: 0;
+            }
+
+            .ums-course__rows {
+                border-top: 1px solid #f1f5f9;
+            }
+
+            .ums-course__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px 0;
+                border-bottom: 1px dashed #f1f5f9;
+            }
+
+            .ums-course__row:last-child {
+                border-bottom: 0;
+            }
+
+            .ums-course__row-label {
+                color: #6b7280;
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            .ums-course__row-value {
+                color: #002147;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: end;
+            }
+
+            .ums-course__deprived {
+                background: #fef2f2;
+                color: #b91c1c;
+                border: 1px solid #fecaca;
+                text-align: center;
+                padding: 8px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 13px;
+                margin-top: 8px;
+            }
+
+            .ums-course__pending {
+                color: #6b7280;
+                font-style: italic;
+            }
+
+            /* ===== Empty state ===== */
+            .ums-empty {
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .ums-empty h3 {
+                color: #4b5563;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 24px;
+            }
+
+            .ums-empty img {
+                max-width: 360px;
+                width: 100%;
+                opacity: .85;
+            }
+        </style>
+
+        <div class="container ums-grades">
+
+
+            <div class="ums-year">
+                <div class="ums-year__header" id="yearHeader_2015" data-bs-toggle="collapse"
+                    data-bs-target="#yearCollapse_2015" aria-expanded="true" aria-controls="yearCollapse_2015">
+                    <span class="ums-year__header-title">
+
+                        2025-2026
+                    </span>
+                    <i class="fa fa-chevron-down ums-year__chevron"></i>
+                </div>
+
+                <div id="yearCollapse_2015" class="collapse show" aria-labelledby="yearHeader_2015" style="">
+                    <div class="ums-year__body">
+
+                        <div class="ums-round">
+
+
+                            <h4 class="ums-round__title">
+
+                                درجات العام الاكاديمي 2025-2026
+                                <span>· دور مايو</span>
+                            </h4>
+
+
+
+                            <div class="ums-hero">
+                                <div class="ums-hero__top">
+                                    <div class="ums-stat">
+                                        <div class="ums-stat__label">التقدير تراكمي</div>
+                                        <div class="ums-stat__value"><span class="ums-hero__grade-letter">ج</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="ums-hero__grade-text">
+                                    </div>
+                                </div>
+
+                                <div class="ums-stats">
+
+                                    <div class="ums-stat">
+                                        <div class="ums-stat__label">الدرجة</div>
+                                        <div class="ums-stat__value">
+                                            <span>320.70</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ums-term">
+                                <button class="ums-term__btn collapsed" type="button" id="termHeader_2015_2_3"
+                                    data-bs-toggle="collapse" data-bs-target="#termCollapse_2015_2_3"
+                                    aria-expanded="false" aria-controls="termCollapse_2015_2_3">
+                                    <span class="ums-term__counter">1</span>
+                                    <span class="ums-term__name">درجات الفصل الدراسي الثاني</span>
+                                    <i class="fa fa-chevron-down ums-term__caret"></i>
+                                </button>
+
+                                <div id="termCollapse_2015_2_3" class="collapse" aria-labelledby="termHeader_2015_2_3">
+                                    <div class="ums-term__body">
+                                        <div class="row g-3">
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-LNGS12</span>
+                                                        <h6 class="ums-course__title">دراسات لغوية</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">مقبول</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">33.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-LNGS12</span>
+                                                        <h6 class="ums-course__title"> ترجمه من العربيه</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">14.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-LNGS12</span>
+                                                        <h6 class="ums-course__title"> ترجمه الي العربيه</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد جدا</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">16.00 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-LNGS12</span>
+                                                        <h6 class="ums-course__title">لغة عربية (قواعد، أدب، نصوص)</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">29 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-TXPS12</span>
+                                                        <h6 class="ums-course__title">نصوص (نثر وقصة قصيرة)</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد جدا</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">50</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-SFLN12</span>
+                                                        <h6 class="ums-course__title">لغة أجنبية ثانية</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">41.60</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ums-round">
+
+
+                            <h4 class="ums-round__title">
+
+                                درجات العام الاكاديمي 2025-2026
+                                <span>· دور يناير</span>
+                            </h4>
+
+
+
+                            <div class="ums-term">
+                                <button class="ums-term__btn" type="button" id="termHeader_2015_1_2"
+                                    data-bs-toggle="collapse" data-bs-target="#termCollapse_2015_1_2"
+                                    aria-expanded="true" aria-controls="termCollapse_2015_1_2">
+                                    <span class="ums-term__counter">1</span>
+                                    <span class="ums-term__name">درجات الفصل الدراسي الأول</span>
+                                    <i class="fa fa-chevron-down ums-term__caret"></i>
+                                </button>
+
+                                <div id="termCollapse_2015_1_2" class="collapse show"
+                                    aria-labelledby="termHeader_2015_1_2" style="">
+                                    <div class="ums-term__body">
+                                        <div class="row g-3">
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-AGLT11</span>
+                                                        <h6 class="ums-course__title">لغة عربية (قواعد، أدب، نصوص)</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد جدا</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">32.60 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-AGLT11</span>
+                                                        <h6 class="ums-course__title">استماع ومحادثات</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد </span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">28 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-AGLT11</span>
+                                                        <h6 class="ums-course__title">دراسات لغويه</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد </span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">40.20 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ums-course">
+                                                    <div class="ums-course__header">
+                                                        <span class="ums-course__code">DE20-AGLT11</span>
+                                                        <h6 class="ums-course__title">نصوص عامة</h6>
+                                                    </div>
+                                                    <div class="ums-course__rows">
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">التقدير</span>
+                                                            <span class="ums-course__row-value">جيد</span>
+                                                        </div>
+                                                        <div class="ums-course__row">
+                                                            <span class="ums-course__row-label">الدرجة</span>
+                                                            <span class="ums-course__row-value">41.30 </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PageBody End -->
+
+            <div id="footer-div">
+                <div class="endpage-divider"></div>
+
+
+                <style>
+                    .footer-bottom-social li {
+                        display: inline-block;
+                        font-size: 14px;
+                        border-right: 1px solid #BDBDBD;
+                        margin-right: 15px;
+                        padding-right: 15px;
+                    }
+
+                    .footer-bottom-social li a,
+                    .footer-bottom-social li {
+                        color: white !important;
+                    }
+
+                    .footer-sticky {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+                </style>
+
+                <!-- FooterBottom Start -->
+                <div class="footer-area-bottom ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <p class="text-white font_18">© FCIS-AinShams 2020 - 2026 &nbsp; </p>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                                <ul class="footer-bottom-social">
+                                    <li><a href="https://ums.asu.edu.eg/App/TermsAndConditions">شروط الاستخدام</a></li>
+                                    <li><a href="https://ums.asu.edu.eg/App/Privacy">سياسية الخصوصية</a></li>
+                                    <li><a href="https://ums.asu.edu.eg/App/FAQ">اسئلة شائعة</a></li>
+                                    <li><a href="https://ums.asu.edu.eg/App/CustomerServiceCharter">ميثاق خدمة
+                                            المتعاملين</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FooterBottom End -->
+
+            </div>
+
+        </div>
+
+
+
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/plugins.js.تنزيل" type="text/javascript"></script>
+        <!-- Bootstrap js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/bootstrap.min.js.تنزيل" type="text/javascript"></script>
+        <!-- WOW JS -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/wow.min.js.تنزيل"></script>
+        <!-- Nivo slider js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.nivo.slider.js.تنزيل" type="text/javascript"></script>
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/home.js.تنزيل" type="text/javascript"></script>
+        <!-- Meanmenu Js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.meanmenu.min.js.تنزيل"
+            type="text/javascript"></script>
+        <!-- Srollup js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.scrollUp.min.js.تنزيل"
+            type="text/javascript"></script>
+        <!-- jquery.counterup js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.counterup.min.js.تنزيل"></script>
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/waypoints.min.js.تنزيل"></script>
+        <!-- Countdown js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.countdown.min.js.تنزيل"
+            type="text/javascript"></script>
+        <!-- Isotope js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/isotope.pkgd.min.js.تنزيل" type="text/javascript"></script>
+        <!-- Select2 Js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/select2.min.js.تنزيل" type="text/javascript"></script>
+        <!-- Nouislider Js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/nouislider.min.js.تنزيل" type="text/javascript"></script>
+        <!-- Validator js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/validator.min.js.تنزيل" type="text/javascript"></script>
+        <!-- Magic Popup js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.magnific-popup.min.js.تنزيل"
+            type="text/javascript"></script>
+        <!-- Gridrotator js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.gridrotator.js.تنزيل" type="text/javascript"></script>
+        <!-- Custom Js -->
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/main-rtl.js.تنزيل" type="text/javascript"></script><a
+            id="scrollUp" href="https://ums.asu.edu.eg/StudentGrades#top"
+            style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-arrow-up"></i></a>
+
+
+        <script>
+            $(document).ready(function () {
+                var tempdataval = ``
+                if (tempdataval != null && tempdataval != '') {
+                    Swal.fire({
+                        icon: 'error',
+                        // title: 'Error',
+                        text: tempdataval,
+                    })
+                }
+
+                var tempsuccess = ``
+                if (tempsuccess != null && tempsuccess != '') {
+                    Swal.fire({
+                        icon: 'success',
+                        // title: 'Success',
+                        text: tempsuccess,
+                    })
+                }
+                //textToSpeech()
+            })
+        </script>
+
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.validate.min.js.تنزيل"></script>
+
+        <script src="./الدرجات _ منصة الجامعة الذكية_files/jquery.validate.unobtrusive.min.js.تنزيل"></script>
+
+
+
+
+
+
+
+        <script>
+
+            function generateUrl(url, params) {
+                var i = 0, key;
+                for (key in params) {
+                    if (i === 0) {
+                        url += "?";
+                    } else {
+                        url += "&";
+                    }
+                    url += key;
+                    url += '=';
+                    url += params[key];
+                    i++;
+                }
+                return url;
+            }
+        </script>
+</body><!-- Body End -->
+
+</html>
